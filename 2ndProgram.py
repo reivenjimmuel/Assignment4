@@ -7,5 +7,8 @@ def fruitCost():
     orange_ = int(input('Enter the amount of oranges that you want to buy: '))*25
     return apple_, orange_
 
+def displayOutput(apple_, orange_):
+    print(f'The total amount is Php {apple_+orange_:.2f}.')
+
 apple, orange = fruitCost()
-print(f'{apple}, {orange}.')
+displayOutput(apple, orange)
